@@ -1,0 +1,63 @@
+{
+	"Defaults": {
+		"Character": {
+			"Settings": {
+				"_/desc": "You see nothing special.",
+				"_/pronoun/subject": "they",
+				"_/pronoun/object": "them",
+				"_/pronoun/possessive/dependent": "their",
+				"_/pronoun/possessive/independent": "theirs",
+				"_/pronoun/reflexive": "themself"
+			}
+		},
+		"Room": {
+			"Settings": {
+				"_/enter": "You arrive in %r.",
+				"_/oenter": "%n arrives.",
+				"_/leave": "You leave %r",
+				"_/oleave": "%n leaves.",
+				"_/desc": "You see nothing special."
+			}
+		},
+		"Object": {
+			"Settings": {
+				"_/desc": "You see nothing special."
+			}
+		},
+		"Action": {
+			"Settings": {
+				"_/desc": "You see nothing special.",
+				"_/succ": "Nothing happens",
+				"_/fail": "Nothing happens"
+			}
+		},
+		"Program": {
+			"Settings": {
+				"_/desc": "You see a bunch of ones and zeros. They're nothing special.",
+				"_": ""
+			}
+		}
+	},
+	"Objects": {
+		1: {
+			"Type": "C",
+			"Flags": ["w"],
+			"Name": "God"
+		},
+		2: {
+			"Type": "R",
+			"Flags": ["d", "h"],
+			"Name": "The Void",
+			"Owner": 1
+		}
+	},
+	"State": {
+		"CharacterLocations": {
+			1: 2
+		},
+		"ObjectLocations": {},
+		"RoomContents": {
+			2: [1]
+		}
+	}
+}
