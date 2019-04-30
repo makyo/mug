@@ -1,18 +1,18 @@
 package game
 
 import (
-	"ioutil"
-	"json"
+	"encoding/json"
+	"io/ioutil"
 )
 
 type Game struct {
 	saveFile string
 	Defaults struct {
 		Character Object
-		Room
-		Object
-		Action
-		Program
+		Room      Object
+		Object    Object
+		Action    Object
+		Program   Object
 	}
 	Objects map[DBRef]Object
 	State   State
